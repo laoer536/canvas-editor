@@ -30,6 +30,6 @@
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
-    "@canvas-editor/core": "^0.0.1"
+    "@canvas-editor/core": "workspace:*"
   }
 }

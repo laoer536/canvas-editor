@@ -27,6 +27,6 @@
   },
   "peerDependencies": {
     "vue": ">=3.0.0",
-    "@canvas-editor/core": "^0.0.1"
+    "@canvas-editor/core": "workspace:*"
   }
 }
