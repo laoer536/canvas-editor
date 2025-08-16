@@ -1,6 +1,6 @@
 {
   "name": "@canvas-editor/vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Vue wrapper for canvas editor",
   "type": "module",
   "main": "dist/index.cjs",
@@ -23,6 +23,6 @@
   },
   "peerDependencies": {
     "vue": ">=3.0.0",
-    "@canvas-editor/core": "^1.0.0"
+    "@canvas-editor/core": "^0.0.1"
   }
 }
