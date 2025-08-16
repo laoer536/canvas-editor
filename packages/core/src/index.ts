@@ -4,17 +4,17 @@
  */
 
 export class Editor {
-  private options: EditorOptions;
+  private options: EditorOptions
 
   constructor(options: EditorOptions) {
-    this.options = options;
+    this.options = options
   }
 
   /**
    * 初始化编辑器
    */
   public init(): void {
-    console.log('Editor initialized with options:', this.options);
+    console.log('Editor initialized with options:', this.options)
   }
 }
 
@@ -22,10 +22,10 @@ export class Editor {
  * 编辑器选项接口
  */
 export interface EditorOptions {
-  container: HTMLElement | string;
-  width?: number;
-  height?: number;
-  [key: string]: any;
+  container: HTMLElement | string
+  width?: number
+  height?: number
+  [key: string]: any
 }
 
 /**
@@ -41,4 +41,4 @@ export enum EditorEventTypes {
 /**
  * 版本信息
  */
-export const VERSION = '1.0.0';
+export const VERSION = '1.0.0'

@@ -1,21 +1,24 @@
 {
   "name": "canvas-editor",
-  "version": "1.0.0",
+  "version": "0.0.6",
   "description": "",
   "type": "module",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm clean && pnpm -r build",
-    "clean": "rm -rf packages/*/dist"
+    "build": "pnpm clean && pnpm -r update:version && pnpm -r build",
+    "build:watch": "pnpm -r --parallel run watch",
+    "clean": "rm -rf packages/*/dist",
+    "release": "pnpm build && changelogen --release --no-commit && pnpm -r publish --access public --no-git-check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.29.6",
     "@types/node": "^24.3.0",
+    "changelogen": "^0.6.2",
     "eslint": "^9.33.0",
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-react": "^7.37.5",
