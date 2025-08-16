@@ -9,7 +9,7 @@
   "scripts": {
     "build": "pnpm clean && pnpm -r build",
     "clean": "rm -rf packages/*/dist",
-    "publish-packages": "pnpm build && pnpm -r publish"
+    "publish-packages": "pnpm build && pnpm -r release"
   },
   "keywords": [],
   "author": "",
