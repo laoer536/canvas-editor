@@ -1,0 +1,27 @@
+{
+  "name": "@canvas-editor/vue",
+  "version": "1.0.0",
+  "description": "Vue wrapper for canvas editor",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@canvas-editor/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "^5.9.2",
+    "vue": "^3.3.0",
+    "vue-tsc": "^1.8.0"
+  }
+}
