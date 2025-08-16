@@ -18,17 +18,21 @@ export default defineConfig({
     },
     rollupOptions: {
       // 外部化 React 依赖
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', '@canvas-editor/core'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          '@canvas-editor/core': 'CanvasEditorCore',
         },
       },
     },
   },
-  plugins: [react(), dts({ 
-    tsconfigPath: './tsconfig.json',
-    exclude: ['vite.config.ts']
-  })],
+  plugins: [
+    react(),
+    dts({
+      tsconfigPath: './tsconfig.json',
+      exclude: ['vite.config.ts'],
+    }),
+  ],
 })

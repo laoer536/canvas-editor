@@ -7,13 +7,14 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm clean && pnpm -r build",
     "clean": "rm -rf packages/*/dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
     "@types/node": "^24.3.0",
     "eslint": "^9.33.0",
     "eslint-plugin-import-x": "^4.16.1",

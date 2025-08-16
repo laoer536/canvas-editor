@@ -16,19 +16,19 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      // 外部化 React 依赖
-      external: ['vue'],
+      external: ['vue', '@canvas-editor/core'],
       output: {
         globals: {
           vue: 'Vue',
+          '@canvas-editor/core': 'CanvasEditorCore',
         },
+        exports: 'named',
       },
     },
   },
   plugins: [
     vue(),
     dts({
-      insertTypesEntry: true,
       tsconfigPath: './tsconfig.json',
       exclude: ['vite.config.ts'],
     }),
