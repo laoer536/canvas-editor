@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/laoer536/canvas-editor/compare/v0.0.3...v0.0.4)
+
+### 🏡 Chore
+
+- Update package.json module field ([cd2948d](https://github.com/laoer536/canvas-editor/commit/cd2948d))
+
+### ❤️ Contributors
+
+- LiuJie <1547698569@qq.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/laoer536/canvas-editor/compare/v0.0.2...v0.0.3)

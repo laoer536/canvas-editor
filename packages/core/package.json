@@ -1,6 +1,6 @@
 {
   "name": "@canvas-editor/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Core package for canvas editor",
   "type": "module",
   "main": "./dist/index.umd.cjs",
