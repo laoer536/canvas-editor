@@ -1,6 +1,6 @@
 {
   "name": "@canvas-editor/core",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "Core package for canvas editor",
   "type": "module",
   "main": "./dist/index.umd.cjs",
@@ -9,8 +9,13 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "update:version": "changelogen --bump --no-output",
+    "watch": "vite build --watch"
   },
   "keywords": [],
   "author": "",
